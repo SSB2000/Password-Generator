@@ -79,6 +79,8 @@ function generatePassword(lower, upper, number, symbol, length) {
   generatedPassword = generatedPassword.slice(1, length - 1);
   console.log(generatedPassword);
   let finalPassword = generatedPassword;
+  //Add generated password condition that is always
+  //starting and ending with lowercase and uppercase letter respectively.
   finalPassword = getRandomLower() + finalPassword + getRandomUpper();
   console.log(finalPassword);
   // *Returning final password.
